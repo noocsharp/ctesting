@@ -1,0 +1,17 @@
+A stupid, dumb simple c testing framework that is really pretty useless and will probably save me as much time as it took to write it.
+
+start_test(char* name) - creates a new testing section, with name name.
+
+end_test() - does about what you would expect it to do
+
+start_subtest(char* name) - start_test but for a subtest
+
+end_subtest(char* name) - tells you if the test succeeded
+
+get_status() - prints the numbers of tests so far
+
+assert_true(int b) - passes if the input isn't 0
+
+assert_false(int b) - passes if the input is 0
+
+assert_equals(void* to_check, void* source, int bytes) - compares bytes bytes at the two input pointers for equality
